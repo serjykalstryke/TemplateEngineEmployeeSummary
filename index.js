@@ -19,8 +19,8 @@ async function init() {
       const html = generateHTML(answers);
       const css = generateCSS();
     //writeFile will creat html page with the answers
-      await writeFileAsync("index.html", html);
-      await writeFileAsync("style.css", css);
+      await writeFileAsync("./output/index.html", html);
+      await writeFileAsync("./output/style.css", css);
 
       console.log("Successfully wrote to index.html");
       console.log("Successfully wrote style.css")
