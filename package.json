@@ -1,0 +1,27 @@
+{
+  "name": "templateengineemployeesummary",
+  "version": "1.0.0",
+  "description": "generates basic employee website",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.6",
+    "jest": "^24.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serjykalstryke/TemplateEngineEmployeeSummary.git"
+  },
+  "author": "David Stinnett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serjykalstryke/TemplateEngineEmployeeSummary/issues"
+  },
+  "homepage": "https://github.com/serjykalstryke/TemplateEngineEmployeeSummary#readme"
+}
