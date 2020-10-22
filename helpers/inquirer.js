@@ -87,23 +87,44 @@ function promptUser() {
   
         {
             type: "input",
-            name: "nameIntern",
-            message: "Enter name of Intern: "
+            name: "nameIntern1",
+            message: "Enter name of Intern number 1: "
         },
         {
             type: "input",
-            name: "idIntern",
-            message: "Enter ID of Intern: "
+            name: "idIntern1",
+            message: "Enter ID of Intern number 1: "
         },
         {
             type: "input",
-            name: "emailIntern",
-            message: "Enter email of Intern:"
+            name: "emailIntern1",
+            message: "Enter email of Intern number 1:"
         },
         {
             type: "input",
-            name: "linkedinIntern",
-            message: "Enter linkedin account of intern: "
+            name: "linkedinIntern1",
+            message: "Enter linkedin account of intern number 1: "
+        },
+
+        {
+            type: "input",
+            name: "nameIntern2",
+            message: "Enter name of Intern number 2: "
+        },
+        {
+            type: "input",
+            name: "idIntern2",
+            message: "Enter ID of Intern number 2: "
+        },
+        {
+            type: "input",
+            name: "emailIntern2",
+            message: "Enter email of Intern number 2:"
+        },
+        {
+            type: "input",
+            name: "linkedinIntern2",
+            message: "Enter linkedin account of intern number 2: "
         },
        
     ]);

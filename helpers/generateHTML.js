@@ -37,9 +37,10 @@ function generateHTML(answers) {
                                 <div class="card-body text-dark">
                                     <div class="card" style="width: 16rem;">
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item" style="text-align:left"><strong>ID: </strong>'</li>
-                                            <li class="list-group-item" style="text-align:left"><strong>Email: </strong> </li>
-                                            <li class="list-group-item" style="text-align:left"><strong>Office: </strong> 
+                                        <li class="list-group-item" style="text-align:left"><strong>Name: </strong>${answers.nameManager ?answers.nameManager : " "}</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>ID: </strong>${answers.idManager ?answers.idManager : " "}</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Email: </strong>${answers.emailManager ? answers.emailManager : " "}</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Office: </strong>${answers.officeManager? answers.officeManager : " "}
                                             </li>
                                         </ul>
                                     </div>
@@ -56,9 +57,10 @@ function generateHTML(answers) {
                                 <div class="card-body text-dark">
                                     <div class="card" style="width: 16rem;">
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item" style="text-align:left"><strong>ID: </strong></li>
-                                            <li class="list-group-item" style="text-align:left"><strong>Email: </strong></li>
-                                            <li class="list-group-item" style="text-align:left"><strong>Github: </strong></li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Name: </strong>${answers.nameEngineer1}</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>ID: </strong>${answers.idEngineer1}</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Email: </strong>${answers.emailEngineer1}</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Github: </strong>${answers.githubEngineer1}</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -74,9 +76,10 @@ function generateHTML(answers) {
                                 <div class="card-body text-dark">
                                     <div class="card" style="width: 16rem;">
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item" style="text-align:left"><strong>ID: </strong></li>
-                                            <li class="list-group-item" style="text-align:left"><strong>Email: </strong></li>
-                                            <li class="list-group-item" style="text-align:left"><strong>Github: </strong></li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Name: </strong>${answers.nameEngineer2}</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>ID: </strong>${answers.idEngineer2}</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Email: </strong>${answers.emailEngineer2}</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Github: </strong>${answers.githubEngineer2}</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -92,10 +95,10 @@ function generateHTML(answers) {
                                 <div class="card-body text-dark">
                                     <div class="card" style="width: 16rem;">
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item" style="text-align:left"><strong>ID: </strong></li>
-                                            <li class="list-group-item" style="text-align:left"><strong>Email: </strong></li>
-                                            <li class="list-group-item" style="text-align:left"><strong>Github: </strong></li>
-                                        </ul>
+                                        <li class="list-group-item" style="text-align:left"><strong>Name: </strong>${answers.nameEngineer3}</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>ID: </strong>${answers.idEngineer3}</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Email: </strong>${answers.emailEngineer3}</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Github: </strong>${answers.githubEngineer3}</li>
                                     </div>
                                 </div>
                             </div>
@@ -110,10 +113,28 @@ function generateHTML(answers) {
                                 <div class="card-body text-dark">
                                     <div class="card" style="width: 16rem;">
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item" style="text-align:left"><strong>ID: </strong></li>
-                                            <li class="list-group-item" style="text-align:left"><strong>Email: </strong></li>
-                                            <li class="list-group-item" style="text-align:left"><strong>Lindkedin: </strong>
-                                            </li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Name: </strong>${answers.nameIntern1}</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>ID: </strong>${answers.idIntern1}</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Email: </strong>${answers.emailIntern1}</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Lindkedin: </strong>${answers.linkedinIntern1}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card border-dark mb-4" style="width: 19rem;">
+                                <div class="card-header">
+                                    <h5></h5>
+                                    <h5><i class="fas fa-user-graduate"></i>Intern</h5>
+                                </div>
+                                <div class="card-body text-dark">
+                                    <div class="card" style="width: 16rem;">
+                                        <ul class="list-group list-group-flush">
+                                        <li class="list-group-item" style="text-align:left"><strong>Name: </strong>${answers.nameIntern2}</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>ID: </strong>${answers.idIntern2}</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Email: </strong>${answers.emailIntern2}</li>
+                                        <li class="list-group-item" style="text-align:left"><strong>Lindkedin: </strong>${answers.linkedinIntern2}</li>
                                         </ul>
                                     </div>
                                 </div>
