@@ -4,7 +4,7 @@ const fs = require("fs");
 const util = require("util");
 //jest runs tests
 const jest = require("jest");
-
+ //helper functions
 const promptUser = require("./helpers/inquirer.js")
 const generateHTML = require("./helpers/generateHTML")
 const generateCSS = require("./helpers/generateCSS")
