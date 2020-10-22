@@ -19,5 +19,5 @@ class Intern extends Employee {
         return "Intern";
     };
 };
-//.exports allows this page to be used elsewhere
+
 module.exports = Intern;
