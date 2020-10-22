@@ -5,31 +5,32 @@ const util = require("util");
 //jest runs tests
 const jest = require("jest");
 const generateHTML = require("./generateHTML")
+const generateCSS = require("./generateCSS")
 //writeFile will create html page
 const writeFileAsync = util.promisify(fs.writeFile);
 
-
+//inquirer prompts
 function promptUser() {
   return inquirer.prompt([
       {
           type: "input",
           name: "nameManager",
-          message: "Enter name of Manager: "
+          message: "Enter Manager Name: "
       },
       {
           type: "input",
           name: "idManager",
-          message: "Enter ID of manager: "
+          message: "Enter Manager ID: "
       },
       {
           type: "input",
           name: "emailManager",
-          message: "Enter email of manager: "
+          message: "Enter Manager Email: "
       },
       {
           type: "input",
           name: "officeManager",
-          message: "Enter office number of manager: "
+          message: "Enter Manager Office Number: "
       },
       {
           type: "input",
@@ -120,15 +121,17 @@ function promptUser() {
 
 
 async function init() {
-  console.log("hi")
   try {
       const answers = await promptUser();
 
       const html = generateHTML(answers);
+      const css = generateCSS();
     //writeFile will creat html page with the answers
       await writeFileAsync("index.html", html);
+      await writeFileAsync("style.css", css);
 
       console.log("Successfully wrote to index.html");
+      console.log("Successfully wrote style.css")
   } catch (err) {
       console.log(err);
   }
